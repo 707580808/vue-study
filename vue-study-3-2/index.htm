@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vue 实列</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app"> helLO WORLD </div>
+    <script>var app = new Vue({
+            el: "#app",
+            template: " <div> helLO WORLDtest  </div>",
+            beforeCreate: function () {
+                alert("beforeCreate");
+                console.log("beforeCreate");
+            },
+            created: function () {
+                alert("created");
+
+                console.log("created");
+            },
+            beforeMount() {
+                alert("beforeMount");
+
+                console.log("beforeMount");
+            }
+        })
+
+    </script>
+</body>
+
+</html>
